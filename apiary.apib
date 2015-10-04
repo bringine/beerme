@@ -1,0 +1,41 @@
+FORMAT: 1A
+HOST: http://api.pwrcat.net
+
+# Beer Me
+Service to find the best pours in town.
+
+# Group Beers
+Access to the beers.
+
+## The Beers [/beers]
+### List all the beers [GET]
++ Request (application/json)
+
+    + Header
+    
+            Authorization: Basic dXNlcjpwYXNzd29yZA==
+
++ Response 200 (application/json)
+
+        [
+            {
+                "name": "Sam Adams",
+                "consumedAt": "2015-01-27T16:45",
+                "pour": "Awesome",
+                "cost": 5.50,
+                "location": {
+                    "lat": "38.908876",
+                    "lon": "-94.767165"
+                }
+            },
+            {
+                "name": "Boulevard Pale Ale",
+                "consumedAt": "2015-01-27T15:30",
+                "pour": "Ok",
+                "cost": 5.75,
+                "location": {
+                    "lat": "38.908876",
+                    "lon": "-94.767165"
+                }
+            }
+        ]
